@@ -2,25 +2,46 @@ import chess
 import chess.pgn
 import random
 
-from my_functions import print_board
 
-board = chess.Board.from_chess960_pos(random.randint(0, 959))
 
-#print(board.root())
+from my_functions import *
 
+board = chess.Board()
 board.reset()
-
-#print(board.root())
-
-#print(board.is_game_over())
 
 x = 0
 
 while not (x == 1) :
-    #print(board.legal_moves)
+    print("\n\n\n\n\n\n")
+
     print_board(board)
+    print_legal_moves(board)
 
     w_move = input("White move: ")
-    temp_move = chess.Move.from_uci(w_move)
-    print(board.is_legal(temp_move))
-    x = 1
+    temp_move = board.parse_san(w_move)
+
+    if board.is_legal(temp_move):
+        board.push(temp_move)
+    else:
+        print("Illegal move")
+        break
+
+    print("\n\n\n\n\n\n")
+
+    print_board(board)
+    print_legal_moves(board)
+
+    b_move = input("Black move: ")
+    temp_move = board.parse_san(b_move)
+
+    if board.is_legal(temp_move):
+        board.push(temp_move)
+    else:
+        print("Illegal move")
+        break
+
+
+
+
+print_board(board)
+print(board.status())
