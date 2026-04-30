@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cdabd3d-9de8-4a68-a76e-687b5c62580d" name="Changes" comment="trying &quot;chess&quot; and &quot;random&quot; libraries together">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chess_coach.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testing_ground.py" afterDir="false" />
+    <list default="true" id="2cdabd3d-9de8-4a68-a76e-687b5c62580d" name="Changes" comment="uploading first files to &quot;main&quot; branch">
+      <change afterPath="$PROJECT_DIR$/my_functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testing_grounds.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testing_ground.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing_ground.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -49,6 +51,8 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.main.executor": "Run",
+    "Python.my_functions.executor": "Run",
+    "Python.testing_ground.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -75,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1777547562086</updated>
       <workItem from="1777547563103" duration="4179000" />
-      <workItem from="1777552361696" duration="422000" />
+      <workItem from="1777552361696" duration="4681000" />
     </task>
     <task id="LOCAL-00001" summary="Setting up the repository">
       <option name="closed" value="true" />
@@ -101,7 +105,23 @@
       <option name="project" value="LOCAL" />
       <updated>1777550056896</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="trying &quot;chess&quot; and &quot;random&quot; libraries together">
+      <option name="closed" value="true" />
+      <created>1777552795618</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1777552795618</updated>
+    </task>
+    <task id="LOCAL-00005" summary="uploading first files to &quot;main&quot; branch">
+      <option name="closed" value="true" />
+      <created>1777552829865</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1777552829865</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,9 +131,12 @@
     <MESSAGE value="Setting up the repository" />
     <MESSAGE value="trying to import pandas" />
     <MESSAGE value="trying &quot;chess&quot; and &quot;random&quot; libraries together" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying &quot;chess&quot; and &quot;random&quot; libraries together" />
+    <MESSAGE value="uploading first files to &quot;main&quot; branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="uploading first files to &quot;main&quot; branch" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Python_Chess_Coach$main.coverage" NAME="main Coverage Results" MODIFIED="1777549615904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Chess_Coach$my_functions.coverage" NAME="my_functions Coverage Results" MODIFIED="1777557047401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Chess_Coach$testing_ground.coverage" NAME="testing_ground Coverage Results" MODIFIED="1777554568677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
