@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cdabd3d-9de8-4a68-a76e-687b5c62580d" name="Changes" comment="Working input and output systems (basic move inputs in SAN format, basic output into a board, and basic output of moves in a readable way)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chess_coach.py" beforeDir="false" afterPath="$PROJECT_DIR$/chess_coach.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testing_ground.py" beforeDir="false" afterPath="$PROJECT_DIR$/testing_ground.py" afterDir="false" />
-    </list>
+    <list default="true" id="2cdabd3d-9de8-4a68-a76e-687b5c62580d" name="Changes" comment="Working input and output systems (basic move inputs in SAN format, basic output into a board, and basic output of moves in a readable way)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1777547562086</updated>
       <workItem from="1777547563103" duration="4179000" />
-      <workItem from="1777552361696" duration="15585000" />
+      <workItem from="1777552361696" duration="16050000" />
     </task>
     <task id="LOCAL-00001" summary="Setting up the repository">
       <option name="closed" value="true" />
@@ -137,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777563747013</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Working input and output systems (basic move inputs in SAN format, basic output into a board, and basic output of moves in a readable way)">
+      <option name="closed" value="true" />
+      <created>1777594319683</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1777594319683</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +195,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Python_Chess_Coach$main.coverage" NAME="main Coverage Results" MODIFIED="1777549615904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python_Chess_Coach$my_functions.coverage" NAME="my_functions Coverage Results" MODIFIED="1777562033123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python_Chess_Coach$testing_ground.coverage" NAME="testing_ground Coverage Results" MODIFIED="1777592981321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python_Chess_Coach$testing_ground.coverage" NAME="testing_ground Coverage Results" MODIFIED="1777593925857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
