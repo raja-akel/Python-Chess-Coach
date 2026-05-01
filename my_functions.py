@@ -3,7 +3,8 @@ import random
 import pandas as pd
 
 def print_board(board):
-    print(board)
+    print("\n\n\n\n\n\n")
+    print(board, "\n")
     return
 
 def print_legal_moves(board):
