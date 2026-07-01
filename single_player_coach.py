@@ -18,12 +18,13 @@ board.reset()
 def single_player_coach():
 
 ### SETTINGS FOR TUNING STOCKFISH ENGINE - asking the user for input on elo level ###
-    user_input_elo_level = input("Choose the elo level you would like to play against (1320-2500): ")
-    user_input_elo_level = int(user_input_elo_level)
+    user_input_elo_level = int(input("Choose the elo level you would like to play against (1320-2500): "))
+
     while user_input_elo_level not in range(1320,2500):
-        user_input_elo_level = input("Please keep the value between 1320-2500: ")
+        user_input_elo_level = int(input("Please keep the value between 1320-2500: "))
+
     stockfish.set_elo_rating(int(user_input_elo_level))
-    stockfish.set_depth(3)
+    stockfish.set_depth(2)
 
 ########################################################################################
     temp_move = ""
@@ -45,7 +46,7 @@ def single_player_coach():
                     print("Illegal move")
             except:
                 print("Illegal move")
-        if board.is_game_over():
+        if board.is_game_over(): #if game ended, show the final state
             print_board(board)
             break
 
@@ -54,7 +55,7 @@ def single_player_coach():
 
         temp_fen_position = board.fen()
         stockfish.set_fen_position(temp_fen_position, True)
-        temp_move = board.parse_uci(stockfish.get_best_move_time(100))
+        temp_move = board.parse_uci(stockfish.get_best_move_time(10))
 
         if board.is_legal(temp_move):
             board.push(temp_move)
