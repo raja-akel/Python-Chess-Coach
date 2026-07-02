@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cdabd3d-9de8-4a68-a76e-687b5c62580d" name="Changes" comment="Cleaned the main.py code and added the chess game importing script">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="2cdabd3d-9de8-4a68-a76e-687b5c62580d" name="Changes" comment="Added a short readme description for the project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function_testing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/function_testing.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782918642516</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added a short readme description for the project">
+      <option name="closed" value="true" />
+      <created>1782919069985</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1782919069985</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,7 +196,8 @@
     <MESSAGE value="board initialization and legal_moves printing functionalities implemented" />
     <MESSAGE value="Working input and output systems (basic move inputs in SAN format, basic output into a board, and basic output of moves in a readable way)" />
     <MESSAGE value="Cleaned the main.py code and added the chess game importing script" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned the main.py code and added the chess game importing script" />
+    <MESSAGE value="Added a short readme description for the project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a short readme description for the project" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -222,6 +231,11 @@
           <url>file://$PROJECT_DIR$/single_player_coach.py</url>
           <line>23</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>file://$PROJECT_DIR$/function_testing.ipynb</url>
+          <line>80</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
