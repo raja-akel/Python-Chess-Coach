@@ -24,7 +24,39 @@ def print_legal_moves(board):
             print(i[0], i[1])
     return
 
+def import_games(source_pgn):
+    player_database_pgn = open(source_pgn, encoding="utf-8")
 
-#board = chess.Board()
-#print_board(board)
-#print_legal_moves(board)
+    all_games = {}
+    game_uid = 1
+    current_game = {}
+    moves = []
+
+    for line in player_database_pgn:
+        line = line.strip()
+
+        if not line:
+            continue
+
+        if line.startswith("["):
+            tag_name = line.split(" ", 1)[0][1:]
+            tag_value = line.split('"')[1]
+
+            if tag_name == "Event" and current_game:
+                current_game["game_pgn"] = " ".join(moves)
+                all_games[game_uid] = current_game
+                game_uid += 1
+                current_game = {}
+                moves = []
+
+            current_game[tag_name] = tag_value
+
+        else:
+            moves.append(line)
+
+    # save the final game
+    if current_game:
+        current_game["game_pgn"] = " ".join(moves)
+        all_games[game_uid] = current_game
+
+    return all_games

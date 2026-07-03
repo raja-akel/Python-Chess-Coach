@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cdabd3d-9de8-4a68-a76e-687b5c62580d" name="Changes" comment="Added a short readme description for the project">
+    <list default="true" id="2cdabd3d-9de8-4a68-a76e-687b5c62580d" name="Changes" comment="added a parsing script to capture games and store them in structured format in a dictionnary for analysis">
+      <change afterPath="$PROJECT_DIR$/my_games_statistics.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/function_testing.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/function_testing.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chess_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/chess_database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/function_testing.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/import_all_chess_dot_com_games.py" beforeDir="false" afterPath="$PROJECT_DIR$/import_all_chess_dot_com_games.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,29 +49,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.Library_fetching.executor": "Run",
-    "Python.chess_coaching.executor": "Run",
-    "Python.import_all_chess_dot_com_games.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.my_functions.executor": "Run",
-    "Python.single_player_coach.executor": "Run",
-    "Python.testing_ground.executor": "Run",
-    "Python.two_player_game.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.language",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.Library_fetching.executor&quot;: &quot;Run&quot;,
+    &quot;Python.chess_coaching.executor&quot;: &quot;Run&quot;,
+    &quot;Python.import_all_chess_dot_com_games.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.my_functions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.single_player_coach.executor&quot;: &quot;Run&quot;,
+    &quot;Python.testing_ground.executor&quot;: &quot;Run&quot;,
+    &quot;Python.two_player_game.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -182,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1782919069985</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added a parsing script to capture games and store them in structured format in a dictionnary for analysis">
+      <option name="closed" value="true" />
+      <created>1783031571222</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1783031571222</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,7 +209,8 @@
     <MESSAGE value="Working input and output systems (basic move inputs in SAN format, basic output into a board, and basic output of moves in a readable way)" />
     <MESSAGE value="Cleaned the main.py code and added the chess game importing script" />
     <MESSAGE value="Added a short readme description for the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a short readme description for the project" />
+    <MESSAGE value="added a parsing script to capture games and store them in structured format in a dictionnary for analysis" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a parsing script to capture games and store them in structured format in a dictionnary for analysis" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -231,11 +244,6 @@
           <url>file://$PROJECT_DIR$/single_player_coach.py</url>
           <line>23</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
-          <url>file://$PROJECT_DIR$/function_testing.ipynb</url>
-          <line>80</line>
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

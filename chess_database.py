@@ -12,7 +12,7 @@ def analyze_chess_database():
     player_database_pgn = open(
         "\\rajakel_all_games.pgn"
     )
-    for
+    #for
 
 
     return

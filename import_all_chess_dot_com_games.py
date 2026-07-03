@@ -59,7 +59,7 @@ def main():
         all_pgns = fetch_pgns(archive_list)
         # Write all PGNs to a single file
         filename = f"{username}_all_games.pgn"
-        with open(filename, "w") as pgn_file:
+        with open(filename, "o") as pgn_file:
             if all_pgns.strip(): # Ensure there is something to write
                 pgn_file.write(all_pgns)
                 print(f"All games have been saved to {filename}")
