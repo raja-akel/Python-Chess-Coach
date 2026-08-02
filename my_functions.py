@@ -3,6 +3,10 @@ import random
 import pandas as pd
 import matplotlib.pyplot as plt
 
+import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+
 def print_board(board):
     print("\n\n\n\n\n\n")
     print(board, "\n")
@@ -122,6 +126,7 @@ def clump_opening(opening):
 
     return "Other"
 
+"""
 def monthly_opening_counts_by_color(
     df,
     opening_col="Opening_Group",
@@ -132,25 +137,32 @@ def monthly_opening_counts_by_color(
     df = df.sort_index()
     df.index = pd.to_datetime(df.index)
 
-    fig, axes = plt.subplots(2, 1, figsize=(14, 10), sharex=True)
+    fig = make_subplots(
+        rows=2,
+        cols=1,
+        shared_xaxes=True,
+        horizontal_spacing=0.2,
+        subplot_titles=["White", "Black"],
+    )
 
     color_specs = [
-        ("White", df["isWhite"] == True, axes[0]),
-        ("Black", df["isBlack"] == True, axes[1]),
+        ("White", df["isWhite"] == True, 1),
+        ("Black", df["isBlack"] == True, 2),
     ]
 
-    for color_name, mask, ax in color_specs:
+    for color_name, mask, row in color_specs:
         subset = df.loc[mask]
 
         monthly = (
             subset.groupby(pd.Grouper(freq=freq))[opening_col]
             .value_counts()
-            .unstack(fill_value=0)
+            .reset_index()
         )
 
         # Drop openings with fewer than min_total_games for this color
         monthly = monthly.loc[:, monthly.sum(axis=0) >= min_total_games]
-        monthly.plot(ax=ax, linewidth=2)
+
+        fig.add_trace(go.Scatter(x=monthly.index, y=monthly['count'], color, mode='lines'))
 
         ax.set_title(f"{color_name} Opening Families Over Time")
         ax.set_xlabel("Date")
@@ -159,3 +171,4 @@ def monthly_opening_counts_by_color(
 
     plt.tight_layout()
     plt.show()
+"""
