@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cdabd3d-9de8-4a68-a76e-687b5c62580d" name="Changes" comment="Fixed final graph to look smooth (similar to chess.com) and added a quick renderer to check the position after a given">
+    <list default="true" id="2cdabd3d-9de8-4a68-a76e-687b5c62580d" name="Changes" comment="Fixed data cleaning, added new features (opponent, user wins...) and created pivoted views">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chess_stats_dashboard.pbix" beforeDir="false" afterPath="$PROJECT_DIR$/chess_stats_dashboard.pbix" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_games_statistics.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/my_games_statistics.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mygames_dataframe.csv" beforeDir="false" afterPath="$PROJECT_DIR$/mygames_dataframe.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rajakel_all_games.pgn" beforeDir="false" afterPath="$PROJECT_DIR$/rajakel_all_games.pgn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single_game_analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/single_game_analysis.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +238,15 @@
       <option name="project" value="LOCAL" />
       <updated>1789070866383</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Fixed data cleaning, added new features (opponent, user wins...) and created pivoted views">
+      <option name="closed" value="true" />
+      <created>1789509502227</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1789509502227</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +267,8 @@
     <MESSAGE value="Started using plotly instead of matplotlib. Still halfway through. But plots now are more interactive" />
     <MESSAGE value="Updated the remaining notebook with plotly. next step is to move on to more visualizations and finding good insights to extract" />
     <MESSAGE value="Fixed final graph to look smooth (similar to chess.com) and added a quick renderer to check the position after a given" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed final graph to look smooth (similar to chess.com) and added a quick renderer to check the position after a given" />
+    <MESSAGE value="Fixed data cleaning, added new features (opponent, user wins...) and created pivoted views" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed data cleaning, added new features (opponent, user wins...) and created pivoted views" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
