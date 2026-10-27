@@ -17,6 +17,8 @@ dependencies = [
     "asyncio",
     "ipykernel>=7.4.0",
     "nbformat>=5.11.1",
+    "streamlit>=1.66.1",
+    "plotly-express>=0.4.1",
 ]
 
 [project.scripts]
