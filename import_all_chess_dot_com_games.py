@@ -2,8 +2,8 @@ import requests
 import time
 
 # User-specific settings
-username = "rajakel" # Replace with your Chess.com username
-contact_email = "rajakel@hotmail.com" # Replace with your contact email
+username = "aaradhyajaggi" # Replace with your Chess.com username
+contact_email = "aaradhya2212@gmail.com" # Replace with your contact email
 
 # Set up headers to mimic a browser request and include a user-agent with contact info
 headers = {
