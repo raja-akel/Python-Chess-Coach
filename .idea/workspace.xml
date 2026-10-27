@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2cdabd3d-9de8-4a68-a76e-687b5c62580d" name="Changes" comment="Multiple QoL changes + exported several datacuts to feed into a power BI dashboard">
-      <change afterPath="$PROJECT_DIR$/.python-version" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parameters.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/python_chess_coach/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uv.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Python-Chess-Coach.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python-Chess-Coach.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/historical_opening.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/historical_opening.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/historical_opening_black.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/historical_opening_black.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/historical_opening_white.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/historical_opening_white.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/historical_winrate_black.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/historical_winrate_black.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/historical_winrate_both_colors.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/historical_winrate_both_colors.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/historical_winrate_white.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/historical_winrate_white.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/monthly_opening.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/monthly_opening.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mygames_dataframe.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/mygames_dataframe.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/top_opponents.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/top_opponents.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/winrate_by_opening.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/winrate_by_opening.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/import_all_chess_dot_com_games.py" beforeDir="false" afterPath="$PROJECT_DIR$/import_all_chess_dot_com_games.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/chess_coach.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_games_statistics.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/my_games_statistics.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rajakel_all_games.pgn" beforeDir="false" afterPath="$PROJECT_DIR$/rajakel_all_games.pgn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single_game_analysis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/single_game_analysis.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="2cdabd3d-9de8-4a68-a76e-687b5c62580d" name="Changes" comment="Multiple QoL changes + exported several datacuts to feed into a power BI dashboard" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
