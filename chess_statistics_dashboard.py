@@ -27,7 +27,7 @@ st.set_page_config(
 
 BASE_DIR = Path(__file__).resolve().parent
 load_dotenv(BASE_DIR / "parameters.env")
-USERNAME = os.getenv("USER", "").strip()
+USERNAME = os.getenv("USERTAG", "").strip()
 DEFAULT_START_DATE = pd.Timestamp("2025-02-28")
 
 
