@@ -13,8 +13,9 @@ USERNAME = os.getenv("USERTAG", "").strip()
 CONTACT_EMAIL = os.getenv("EMAIL", "").strip() # Replace with your contact email
 IMPORT_OPPONENT_COUNTRIES = os.getenv("IMPORT_OPPONENT_COUNTRIES", "").strip().lower() == "true"
 
-COUNTRIES_FILE = "opponent_countries.json"
-GAME_ARCHIVE_FILE = "data\\mygames_dataframe.csv"
+COUNTRIES_FILE = BASE_DIR / "data" / "opponent_countries.json"
+LEGACY_COUNTRIES_FILE = BASE_DIR / "opponent_countries.json" # old location, read once and migrated to data/
+GAME_ARCHIVE_FILE = BASE_DIR / "data" / "mygames_dataframe.csv"
 
 # Set up headers to mimic a browser request and include a user-agent with contact info
 headers = {
@@ -65,9 +66,10 @@ def fetch_pgns(archive_list):
 
 
 def load_opponent_cache():
-    if os.path.exists(COUNTRIES_FILE):
-        with open(COUNTRIES_FILE, "r", encoding="utf-8") as file:
-            return json.load(file)
+    for path in (COUNTRIES_FILE, LEGACY_COUNTRIES_FILE):
+        if path.exists():
+            with open(path, "r", encoding="utf-8") as file:
+                return json.load(file)
     return {}
 
 
@@ -99,7 +101,7 @@ def fetch_opponent_countries(pgn_text, username):
         if opponent.lower() in cache:
             continue
 
-        time.sleep(1)
+        time.sleep(0.5)
 
         url = f"https://api.chess.com/pub/player/{opponent}"
 
@@ -129,6 +131,7 @@ def fetch_opponent_countries(pgn_text, username):
             }
 
             # Save incrementally so progress survives interruptions.
+            COUNTRIES_FILE.parent.mkdir(exist_ok=True)
             with open(COUNTRIES_FILE, "w", encoding="utf-8") as file:
                 json.dump(cache, file, indent=4, ensure_ascii=False)
 
@@ -150,7 +153,7 @@ def main():
             import pandas as pd
             mygames_df = pd.read_csv(GAME_ARCHIVE_FILE)
             latest_month = mygames_df.iloc[-1, 0][0:7].replace("-", "/")
-            latest_api_month = "https://api.chess.com/pub/player/rajakel/games/" + latest_month
+            latest_api_month = f"https://api.chess.com/pub/player/{USERNAME.lower()}/games/" + latest_month
 
             archive_list = archive_list[archive_list.index(latest_api_month):] #start from the latest month (inclusive)
         ###

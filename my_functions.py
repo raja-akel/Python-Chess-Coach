@@ -126,6 +126,41 @@ def clump_opening(opening):
 
     return "Other"
 
+
+def load_opponent_countries(profiles_path, iso_path):
+    """Join the cached chess.com opponent profiles with the ISO country lookup.
+
+    Returns one row per opponent (lowercase username as index) with
+    Country, Region, Subregion and CountryISO3 columns.
+    """
+    profiles = pd.read_json(profiles_path).T
+    profiles.index = profiles.index.str.lower()
+    profiles = profiles[~profiles.index.duplicated()]
+    iso_codes = pd.read_csv(iso_path)
+
+    countries = profiles[["country_code"]].merge(
+        iso_codes[["alpha-2", "alpha-3", "name", "region", "sub-region"]],
+        how="left",
+        left_on="country_code",
+        right_on="alpha-2",
+    ).set_axis(profiles.index)
+    countries["sub-region"] = countries["sub-region"].replace("Western Asia", "Middle East")
+    return countries.rename(columns={
+        "name": "Country",
+        "region": "Region",
+        "sub-region": "Subregion",
+        "alpha-3": "CountryISO3",
+    })[["Country", "Region", "Subregion", "CountryISO3"]]
+
+
+def add_opponent_countries(df, countries, opponent_col="Opponent"):
+    """Add the opponent's Country/Region/Subregion columns to a games dataframe."""
+    df = df.copy()
+    keys = df[opponent_col].str.lower()
+    for col in countries.columns:
+        df[col] = keys.map(countries[col])
+    return df
+
 """
 def monthly_opening_counts_by_color(
     df,
